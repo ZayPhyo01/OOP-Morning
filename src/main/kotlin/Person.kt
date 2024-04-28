@@ -1,6 +1,7 @@
 class Person(private val name: String, private val age: Int) {
 
     private val backPack = BackPack()
+    private val car = Car()
 
     fun eatPotatoChip() {
         println("eat")
@@ -24,13 +25,28 @@ class Person(private val name: String, private val age: Int) {
 
     fun carDoorOpen() {
         println("car door open")
+        car.doorOpen()
+    }
+
+    fun closeDoor() {
+        car.closeDoor()
+    }
+
+    fun openKey() {
+        car.openKey()
+    }
+
+    fun closeKey() {
+        car.closeKey()
     }
 
     fun drive() {
         println("drive")
+        car.drive()
     }
 
     fun stopCar() {
         println("stop car")
+        car.stop()
     }
 }
